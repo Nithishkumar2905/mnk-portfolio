@@ -27,7 +27,7 @@ export default function Navbar() {
       setMenuOpen(false);
       const id = to.replace('/#', '');
       if (location.pathname !== '/') {
-        window.location.href = to;
+        window.location.assign(to);
       } else {
         document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
       }

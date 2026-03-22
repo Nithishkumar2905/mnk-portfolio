@@ -18,7 +18,7 @@ export default function CategorySettings() {
     try {
       const data = await categoriesAPI.getAll();
       setCategories(data);
-    } catch (err) {
+    } catch {
       toast.error('Failed to load categories');
     } finally {
       setLoading(false);
