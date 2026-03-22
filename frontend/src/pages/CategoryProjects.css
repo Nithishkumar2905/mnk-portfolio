@@ -1,0 +1,53 @@
+.category-projects-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.category-projects__header {
+  margin-bottom: 3rem;
+}
+
+.category-projects__count {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.pinterest-grid {
+  display: flex;
+  width: auto;
+  gap: 1.5rem;
+}
+
+.pinterest-grid__column {
+  background-clip: padding-box;
+}
+
+/* Style for individual project cards in masonry */
+.pinterest-grid .project-card {
+  margin-bottom: 1.5rem;
+}
+
+.category-projects__empty {
+  text-align: center;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}

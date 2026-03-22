@@ -1,0 +1,39 @@
+.deco-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.deco-grid {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(circle at 50% 50%, black, transparent);
+}
+
+.deco-lines {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.1;
+}
+
+.deco-line {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #fff, transparent);
+  transform-origin: top;
+}
+
+.deco-line--1 { margin-left: 10%; }
+.deco-line--2 { margin-right: 15%; }

@@ -1,0 +1,127 @@
+/* ─── Manage Experiences — Dark Theme ─── */
+
+.exp-add-form {
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.exp-add-form__title {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e4e4e7;
+  margin-bottom: 1.5rem;
+}
+
+.exp-add-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp-add-form__field {
+  margin-bottom: 1rem;
+}
+
+.exp-add-form__field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.exp-add-form__field input,
+.exp-add-form__field textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: #e4e4e7;
+  transition: all 0.3s ease;
+  font-family: var(--font-body);
+  resize: vertical;
+}
+
+.exp-add-form__field input::placeholder,
+.exp-add-form__field textarea::placeholder {
+  color: #52525b;
+}
+
+.exp-add-form__field input:focus,
+.exp-add-form__field textarea:focus {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.exp-add-form__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/* ─── Experience List Items ─── */
+.exp-item {
+  grid-template-columns: 48px 1fr auto !important;
+}
+
+.exp-item__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(99, 102, 241, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #818cf8;
+  flex-shrink: 0;
+}
+
+.exp-item__meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.exp-item__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #71717a;
+}
+
+.exp-item__skill-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: rgba(99, 102, 241, 0.08);
+  color: #a78bfa;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .exp-add-form__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-item {
+    grid-template-columns: 1fr !important;
+  }
+
+  .exp-item__icon {
+    display: none;
+  }
+}

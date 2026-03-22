@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 234">
+  <defs>
+    <linearGradient id="ai-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#00D2FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="234" rx="42" fill="url(#ai-grad)"/>
+  <!-- Sparkle/star icon for AI -->
+  <path d="M120 50 L130 95 L175 105 L130 115 L120 160 L110 115 L65 105 L110 95 Z" fill="white" opacity="0.95"/>
+  <circle cx="160" cy="65" r="8" fill="white" opacity="0.6"/>
+  <circle cx="80" cy="155" r="6" fill="white" opacity="0.5"/>
+  <text x="120" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="28" fill="rgba(255,255,255,0.8)">GEN AI</text>
+</svg>

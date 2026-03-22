@@ -1,0 +1,214 @@
+/* ─── Add Project — Dark Theme ─── */
+
+.add-project__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-project__card {
+  margin-bottom: 0;
+}
+
+.add-project__section-title {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e4e4e7;
+  margin-bottom: 20px;
+}
+
+.add-project__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.add-project__field {
+  margin-bottom: 16px;
+}
+
+.add-project__field:last-child {
+  margin-bottom: 0;
+}
+
+.add-project__field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a1a1aa;
+  margin-bottom: 8px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.add-project__field input,
+.add-project__field textarea,
+.add-project__field select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #e4e4e7;
+  background: rgba(255, 255, 255, 0.04);
+  transition: all 0.3s ease;
+  resize: vertical;
+}
+
+.add-project__field input::placeholder,
+.add-project__field textarea::placeholder {
+  color: #52525b;
+}
+
+.add-project__field input:focus,
+.add-project__field textarea:focus,
+.add-project__field select:focus {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.add-project__field select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2371717a' viewBox='0 0 16 16'%3E%3Cpath d='M8 10.5l-4-4h8l-4 4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.add-project__field select option {
+  background: #1a1a1f;
+  color: #e4e4e7;
+}
+
+.add-project__checkbox-row {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  color: #a1a1aa;
+  margin-bottom: 0 !important;
+}
+
+.add-project__checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #6366f1;
+}
+
+/* ─── Upload Zone ─── */
+.add-project__upload-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px dashed rgba(99, 102, 241, 0.25);
+  border-radius: 14px;
+  padding: 40px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(99, 102, 241, 0.03);
+}
+
+.add-project__upload-zone:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(99, 102, 241, 0.06);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.08);
+}
+
+.add-project__upload-text {
+  font-weight: 600;
+  color: #d4d4d8;
+  font-size: 0.9rem;
+}
+
+.add-project__upload-hint {
+  font-size: 0.78rem;
+  color: #52525b;
+}
+
+.add-project__upload-note {
+  font-size: 0.82rem;
+  color: #52525b;
+  margin-bottom: 16px;
+}
+
+/* ─── Previews ─── */
+.add-project__previews {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.add-project__preview {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.add-project__preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.add-project__remove-img {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  background: #ef4444;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #0c0c0f;
+  transition: background 0.3s;
+}
+
+.add-project__remove-img:hover {
+  background: #dc2626;
+}
+
+.add-project__add-more {
+  aspect-ratio: 1;
+  border: 2px dashed rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  color: #52525b;
+  font-size: 0.75rem;
+  transition: all 0.3s;
+}
+
+.add-project__add-more:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  color: #818cf8;
+}
+
+/* ─── Actions ─── */
+.add-project__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .add-project__grid {
+    grid-template-columns: 1fr;
+  }
+}

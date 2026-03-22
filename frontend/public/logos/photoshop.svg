@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 234">
+  <defs>
+    <linearGradient id="ps-grad" x1="10%" y1="90%" x2="90%" y2="10%">
+      <stop offset="0%" stop-color="#001E36"/>
+      <stop offset="100%" stop-color="#31A8FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="234" rx="42" fill="url(#ps-grad)"/>
+  <text x="120" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="100" fill="white">Ps</text>
+</svg>

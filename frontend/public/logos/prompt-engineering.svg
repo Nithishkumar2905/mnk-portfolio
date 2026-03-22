@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 234">
+  <defs>
+    <linearGradient id="pe-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#6C63FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="234" rx="42" fill="url(#pe-grad)"/>
+  <text x="120" y="130" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="80" fill="white">&gt;_</text>
+  <text x="120" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-weight="600" font-size="30" fill="rgba(255,255,255,0.7)">PROMPT</text>
+</svg>
