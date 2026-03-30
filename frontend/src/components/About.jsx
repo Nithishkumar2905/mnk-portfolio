@@ -26,10 +26,9 @@ export default function About() {
             not only attract but also communicate purpose effectively.
           </p>
           <p className="about__para">
-            With experience in graphic design, UI/UX, and prompt engineering, I enjoy crafting visually
+            With experience in graphic design, and UI/UX, I enjoy crafting visually
             compelling posters and building intuitive, user-centric digital experiences. My skill set
-            extends into core IT domains, including web technologies, databases, and exposure to data-
-            driven fields like machine learning and big data.
+            extends into core IT domains, including web technologies.
           </p>
           <p className="about__para">
             When I'm not designing, you'll find me behind a camera lens — exploring the world one
