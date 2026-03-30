@@ -11,6 +11,11 @@
   padding-top: 4rem;
 }
 
+.projects-overview__header .section-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .projects-overview__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
