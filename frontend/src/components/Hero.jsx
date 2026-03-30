@@ -22,7 +22,7 @@ export default function Hero() {
             Graphic Designer · UI/UX Designer · Photographer <br />
           </p>
           <p className="hero__description animate-fade-up delay-300">
-            Where creativity meets clarity — powered by design, prompt engineering, and technology.
+            Where creativity meets clarity — powered by design and technology.
           </p>
           <div className="hero__actions animate-fade-up delay-400">
             <Link to="/projects" className="btn btn-primary">
