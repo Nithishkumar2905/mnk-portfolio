@@ -17,6 +17,7 @@ export default function AddProject() {
     category: '',
     description: '',
     tools: '',
+    link: '',
   });
   const [imageFile, setImageFile] = useState(null);
   const [preview, setPreview] = useState(null);
@@ -47,6 +48,7 @@ export default function AddProject() {
         description: form.description,
         category: form.category,
         tools: form.tools,
+        link: form.link,
         imageFile,
       });
       toast.success('Project published successfully!');
@@ -115,6 +117,16 @@ export default function AddProject() {
               placeholder="Adobe Photoshop, Figma, Illustrator (comma separated)"
               value={form.tools}
               onChange={(e) => setForm({ ...form, tools: e.target.value })}
+            />
+          </div>
+
+          <div className="add-project__field">
+            <label>Project Link (Optional)</label>
+            <input
+              type="url"
+              placeholder="e.g. https://github.com/user/repo or https://behance.net/..."
+              value={form.link}
+              onChange={(e) => setForm({ ...form, link: e.target.value })}
             />
           </div>
         </div>

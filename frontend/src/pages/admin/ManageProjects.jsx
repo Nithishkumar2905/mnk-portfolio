@@ -39,6 +39,7 @@ export default function ManageProjects() {
       category: project.category,
       description: project.description,
       tools: project.tools || '',
+      link: project.link || '',
       existingImageUrl: project.image_url,
     });
     setEditImageFile(null);
@@ -160,6 +161,12 @@ export default function ManageProjects() {
                     placeholder="Tools (comma separated)"
                     className="manage__edit-input"
                   />
+                  <input
+                    value={editForm.link}
+                    onChange={(e) => setEditForm({ ...editForm, link: e.target.value })}
+                    placeholder="Project Link (e.g. GitHub/Behance)"
+                    className="manage__edit-input"
+                  />
                   <textarea
                     value={editForm.description}
                     onChange={(e) => setEditForm({ ...editForm, description: e.target.value })}
@@ -181,6 +188,13 @@ export default function ManageProjects() {
                       <span key={t} className="detail__tool-badge">{t.trim()}</span>
                     ))}
                   </div>
+                  {project.link && (
+                    <div className="manage__link-preview">
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="manage__link-text">
+                        {project.link.replace(/^https?:\/\/(www\.)?/, '').slice(0, 30)}...
+                      </a>
+                    </div>
+                  )}
                 </div>
               )}
 

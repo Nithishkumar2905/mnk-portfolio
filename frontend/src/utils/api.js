@@ -86,7 +86,7 @@ export const projectsAPI = {
   },
 
   // Create a project (with optional image file)
-  create: async ({ title, description, category, tools, imageFile }) => {
+  create: async ({ title, description, category, tools, link, imageFile }) => {
     let image_url = null;
 
     if (imageFile) {
@@ -97,7 +97,7 @@ export const projectsAPI = {
     console.log('Inserting project into database table:', 'projects');
     const { data, error } = await supabase
       .from('projects')
-      .insert([{ title, description, category, tools, image_url }])
+      .insert([{ title, description, category, tools, link, image_url }])
       .select()
       .single();
 
@@ -113,7 +113,7 @@ export const projectsAPI = {
   },
 
   // Update a project (replacing image if a new file is supplied)
-  update: async (id, { title, description, category, tools, imageFile, existingImageUrl }) => {
+  update: async (id, { title, description, category, tools, link, imageFile, existingImageUrl }) => {
     let image_url = existingImageUrl;
 
     if (imageFile) {
@@ -127,7 +127,7 @@ export const projectsAPI = {
 
     const { data, error } = await supabase
       .from('projects')
-      .update({ title, description, category, tools, image_url })
+      .update({ title, description, category, tools, link, image_url })
       .eq('id', id)
       .select()
       .single();

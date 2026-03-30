@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Wrench, Tag } from 'lucide-react';
+import { ArrowLeft, Wrench, Tag, ExternalLink } from 'lucide-react';
 import { projectsAPI } from '../utils/api';
 import Navbar from '../components/Navbar';
 import './ProjectDetail.css';
@@ -117,6 +117,22 @@ export default function ProjectDetail() {
                   })}
                 </p>
               </div>
+
+              {project.link && (
+                <div className="detail__meta-card detail__meta-card--action">
+                  <h3 className="detail__meta-title">Project Link</h3>
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="btn btn-primary detail__link-btn"
+                  >
+                    {project.category === 'Technical Projects' ? 'View Live Demo' : 
+                     project.category === 'UI/UX Design' ? 'View Case Study' : 'Visit Project'}
+                    <ExternalLink size={16} />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>

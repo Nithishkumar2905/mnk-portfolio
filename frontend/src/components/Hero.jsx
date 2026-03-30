@@ -19,19 +19,15 @@ export default function Hero() {
             <span className="hero__name">Nithish Kumar M</span>
           </h1>
           <p className="hero__subtitle animate-fade-up delay-200">
-            Graphic Designer · UI/UX Designer · Prompt Engineer <br />
-            Photographer
+            Graphic Designer · UI/UX Designer · Photographer <br />
           </p>
           <p className="hero__description animate-fade-up delay-300">
             Where creativity meets clarity — powered by design, prompt engineering, and technology.
           </p>
           <div className="hero__actions animate-fade-up delay-400">
-            <a href="#projects" className="btn btn-primary" onClick={(e) => {
-              e.preventDefault();
-              document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-            }}>
+            <Link to="/projects" className="btn btn-primary">
               View Projects <ArrowRight size={16} />
-            </a>
+            </Link>
             <a href="#contact" className="btn btn-outline" onClick={(e) => {
               e.preventDefault();
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
